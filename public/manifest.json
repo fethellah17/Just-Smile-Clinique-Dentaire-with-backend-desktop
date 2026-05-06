@@ -1,0 +1,27 @@
+{
+  "name": "Just Smile - Clinique Dentaire",
+  "short_name": "Just Smile",
+  "description": "Système de gestion professionnel pour la Clinique Dentaire Just Smile",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0EA5E9",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["medical", "health", "productivity"],
+  "lang": "fr",
+  "dir": "ltr"
+}

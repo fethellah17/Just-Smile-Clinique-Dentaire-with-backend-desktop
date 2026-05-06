@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <defs>
+    <linearGradient id="toothGradient192" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284C7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" fill="#ffffff" rx="20"/>
+  <path d="M96 38 C67 38 58 48 58 67 C58 86 54 105 54 124 C54 143 67 153 77 153 C81 153 83 149 83 143 L83 96 C83 92 86 88 90 88 L102 88 C106 88 109 92 109 96 L109 143 C109 149 111 153 115 153 C125 153 138 143 138 124 C138 105 134 86 134 67 C134 48 125 38 96 38 Z" 
+        fill="url(#toothGradient192)" 
+        stroke="#0369A1" 
+        stroke-width="4"/>
+  <ellipse cx="81" cy="67" rx="6" ry="8" fill="#ffffff" opacity="0.6"/>
+</svg>

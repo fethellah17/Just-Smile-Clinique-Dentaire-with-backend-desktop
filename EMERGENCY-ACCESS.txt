@@ -1,0 +1,76 @@
+========================================
+EMERGENCY ACCESS RESTORATION GUIDE
+========================================
+
+PROBLEM: Locked out of the application
+
+SOLUTION: The server now auto-creates the users table and default account on startup.
+
+========================================
+QUICK START (3 STEPS)
+========================================
+
+1. Install bcrypt (if needed):
+   cd api
+   npm install bcrypt
+
+2. Start the API server:
+   cd api
+   npm start
+
+   The server will automatically:
+   - Create the users table if it doesn't exist
+   - Create default user: dr.souidi@justsmile.dz / admin123
+
+3. Start the frontend (in a new terminal):
+   npm run dev
+
+========================================
+DEFAULT CREDENTIALS
+========================================
+
+Email: dr.souidi@justsmile.dz
+Password: admin123
+Recovery Code: JUST-SMILE-2026
+
+========================================
+PASSWORD RECOVERY
+========================================
+
+If you're locked out:
+1. Click "Mot de passe oublié ?" on the login page
+2. Enter recovery code: JUST-SMILE-2026
+3. Your password will be reset to: admin123
+4. Login with the default credentials
+
+========================================
+HOW IT WORKS
+========================================
+
+Backend (api/server.js):
+- On startup, checks if users table exists
+- Creates table if missing
+- Creates default user if table is empty
+- All automatic, no manual steps needed
+
+Backend (api/routes/auth.js):
+- /api/auth/login - Validates credentials against database
+- /api/auth/update-password - Updates password in SQLite
+- /api/auth/reset-password - Resets password with recovery code
+
+Frontend:
+- Login page calls backend API
+- Password changes persist to SQLite
+- Recovery modal resets password in database
+
+========================================
+TROUBLESHOOTING
+========================================
+
+If you still can't login:
+1. Stop the API server (Ctrl+C)
+2. Delete api/dental-clinic.db
+3. Restart the API server
+4. The database will be recreated with default user
+
+========================================
